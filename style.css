@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    font-family: "Exo 2", sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.25px 2px whitesmoke;
+}
+
+/* Logo Styles */
+.logo {
+    padding: 0.25rem;
+    font-family: "Orbitron", serif;
+    width: 150px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+/* Navbar Styles */
+.navBar {
+    position: relative;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar ul li {
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    font-family: "Orbitron", serif;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+.navBar ul li a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+
+/* Search Box Styles */
+#search-li {
+    width: 250px;
+}
+
+.search-container {
+    padding-left: 2rem;
+    /* width: 250px; */
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    width: 100%;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    background-color: #3f3f3f;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 0.5rem #00ffff;
+    transition: 0.3s;
+}
+
+.search-box:focus {
+    box-shadow: 0 0 1rem #00ffff;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn i {
+    color: #00ffff;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    position: relative;
+    left: 0.25rem
+}
+
+.search-btn i:hover {
+    color: #00aaff;
+
+}
+
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn i {
+    color: #00ffff;
+    font-size: 1.25rem;
+    vertical-align: middle;  
+}
+
+.btn i:hover {
+    color: #00aaff;
+}
+
+/* Menu Button */
+.menu-btn {
+    display: block;
+    font-size: 2rem;
+}
+
+
+/* Responsive Menu Toggle */
+.navBar ul {
+    display: none;
+    flex-direction: column  ;
+    position: absolute;
+    right: 0.5rem;
+    border-radius: 8px;
+    padding: 1rem;
+    align-items: flex-end;
+}
+
+.navBar ul.show {
+    display: flex;
+}
+
+@media (min-width: 1015px) {
+    .navBar ul {
+        display: flex;
+        position: static;
+        background: transparent;
+        flex-direction: row;
+    }
+    .menu-btn {
+        display: none;
+    }
+
+}
+
+
+/* Header Style Complete */
